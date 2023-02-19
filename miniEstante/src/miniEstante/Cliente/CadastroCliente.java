@@ -45,7 +45,7 @@ public class CadastroCliente {
 		System.out.println("Cliente cadastrado com sucesso!");
 	}
 
-	static void listarClientes() {
+	public static void listarClientes() {
 		if (nomes.size() == 0) {
 			System.out.println("Não existem clientes cadastrados");
 		} else {
@@ -58,7 +58,7 @@ public class CadastroCliente {
 		}
 	}
 
-	static void removerCliente() {
+	public static void removerCliente() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Digite o nome do cliente que deseja remover: ");
 		String nome = scanner.next();

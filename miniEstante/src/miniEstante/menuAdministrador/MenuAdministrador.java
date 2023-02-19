@@ -2,6 +2,7 @@ package miniEstante.menuAdministrador;
 
 import java.util.Scanner;
 
+import miniEstante.Menu;
 import miniEstante.Cliente.CadastroCliente;
 
 public class MenuAdministrador {
@@ -22,17 +23,53 @@ public class MenuAdministrador {
 
     if (usuarioDigitado.equals(usuario) && senhaDigitada.equals(senha)) {
       System.out.println("Bem-vindo ao menu de administrador da biblioteca.");
-      //exibeMenu();
+      AdministradorMenu();
     } else {
       System.out.println("Credenciais incorretas. Saindo do sistema...");
     }
   }
-}
-  
 
-/*private static void exibeMenu() {
-	
-	
-}*/
+  private static void AdministradorMenu() {
+	 
 
- 
+	        int opcao;
+	        Scanner scanner = new Scanner(System.in);
+
+	        do {
+	            System.out.println("Escolha uma opção:");
+	            System.out.println("1 - Cadastrar cliente");
+	            System.out.println("2 - Ver lista de clientes");
+	            System.out.println("3 - Excluir clientes");
+	            System.out.println("4 - Ver livros");
+	            System.out.println("5 - Excluir livro");
+	            System.out.println("6 - Sair(admin)");
+	            opcao = scanner.nextInt();
+
+	            switch (opcao) {
+	                case 1:
+	                	CadastroCliente.cadastrarCliente();
+	                    break;
+	                case 2:
+	                	CadastroCliente.listarClientes();
+	                    break;
+	                case 3:
+	                	CadastroCliente.removerCliente();
+	                    break;
+	                case 4:
+	                    //codigo para ver livros
+	                    break;
+	                case 5:
+	                    //codigo para excluir livros
+	                    break;
+	                case 6:
+	                    System.out.println(" Administrador Deslogado \nObrigado por usar o sistema!");
+	                    Menu.main(null);
+	                    break;
+	            }
+	        } while (opcao != 6);
+
+	    }
+}    
+	
+
+	    
