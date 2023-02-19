@@ -6,14 +6,13 @@ import java.util.Scanner;
 import miniEstante.homePage.HomePage;
 
 public class LivrosDoMes {
-	
-	
+
 	public static void livrosDoMes() {
-	
+
 		System.out.println("lista de livros");
-		
+
 	}
-	
+
 	static Scanner leia = new Scanner(System.in);
 
 	public static ArrayList<String> livros = new ArrayList<String>();
@@ -36,11 +35,11 @@ public class LivrosDoMes {
 				System.out.println("Texto Vazio!\n");
 			else if (!livro.equals("0")) {
 				livros.add(livro);
-				System.out.println("Livro adicionado!");
-			}
+				System.out.println("Livro adicionado!\n");
+			}		
 		} while (!livro.equals("0"));
 
-		HomePage.homePage();
+		//HomePage.homePage();
 	}
 
 }
