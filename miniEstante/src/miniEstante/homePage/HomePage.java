@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import miniEstante.Menu;
 import miniEstante.Cliente.CadastroCliente;
+import miniEstante.LivrosDoMes.LivrosDoMes;
 
 public class HomePage {
 	
@@ -30,7 +31,7 @@ public class HomePage {
 			
 			switch (opcao) {
 			case 1 -> System.out.println("1");
-			case 2 -> System.out.println("2");
+			case 2 -> LivrosDoMes.livrosDoMes();
 			case 3 -> System.out.println("3");
 			case 4 -> Menu.main(null);
 			default -> System.out.println("Opção inválida\n");
