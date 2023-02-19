@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import miniEstante.Cliente.CadastroCliente;
 import miniEstante.login.Login;
+import miniEstante.menuAdministrador.MenuAdministrador;
 
 
 public class Menu {
@@ -24,8 +25,8 @@ public class Menu {
 			System.out.println("                                                                    ");
 			System.out.println("              1- Fazer Login                                        ");
 			System.out.println("              2- Cadastre-se                                        ");
-			System.out.println("              3- Sair                                               ");
-			System.out.println("                                                                    ");
+			System.out.println("              3- Administrador                                               ");
+			System.out.println("              4- Sair                                                    ");
 			System.out.println("********************************************************************");
 			System.out.println("                                                                    ");
 			System.out.println("Escolha uma opção:");
@@ -35,7 +36,8 @@ public class Menu {
 			switch (opcao) {
 			case 1 -> CadastroCliente.logar();
 			case 2 -> CadastroCliente.cadastrarCliente(); 
-			case 3 -> {
+			case 3 -> MenuAdministrador.main(args);
+			case 4 -> {
 				System.out.println("Até mais! Obrigada por ter Visitado o nosso site. Te esperamos logo!");
 				ler.close();
 				System.exit(0);
