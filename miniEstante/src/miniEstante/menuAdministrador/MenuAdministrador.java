@@ -62,7 +62,7 @@ public class MenuAdministrador {
 	                    //codigo para excluir livros
 	                    break;
 	                case 6:
-	                    System.out.println(" Administrador Deslogado \nObrigado por usar o sistema!");
+	                    System.out.println(" Administrador Deslogado! \nObrigado por usar o sistema!");
 	                    Menu.main(null);
 	                    break;
 	            }
