@@ -12,7 +12,7 @@ public class MenuAdministrador {
   private static String usuario = "admin";
   private static String senha = "1234";
 
-  public static void main(String[] args) {
+  public static void menuAdministrador() {
 
     Scanner scanner = new Scanner(System.in);
 
