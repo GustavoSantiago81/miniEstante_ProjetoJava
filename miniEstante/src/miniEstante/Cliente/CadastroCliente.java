@@ -3,7 +3,7 @@ package miniEstante.Cliente;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import miniEstante.homePage.HomePage;
+import miniEstante.paginaCliente.paginaCliente;
 
 public class CadastroCliente {
 	public static ArrayList<String> nomes = new ArrayList<String>();
@@ -23,7 +23,7 @@ public class CadastroCliente {
 		email = scanner.nextLine();
 
 		if (CadastroCliente.emails.contains(email)) {
-			HomePage.homePage();
+			paginaCliente.homePage();
 				
 		} else {
 			System.out.println("\nEmail não cadastrado!");

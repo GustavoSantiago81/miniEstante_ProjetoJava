@@ -1,4 +1,4 @@
-package miniEstante.homePage;
+package miniEstante.paginaCliente;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ import miniEstante.Menu;
 import miniEstante.Cliente.CadastroCliente;
 import miniEstante.LivrosDoMes.LivrosDoMes;
 
-public class HomePage {
+public class paginaCliente {
 	
 	static Scanner leia = new Scanner(System.in);
 
@@ -18,7 +18,8 @@ public class HomePage {
 		while (true) {
 			System.out.println("********************************************************************");
 			System.out.println("                                                                    ");
-			System.out.println("                      Bem-vinde, " + CadastroCliente.nomes.get(CadastroCliente.emails.indexOf(CadastroCliente.getEmail())));
+			System.out.println("                      Bem-vinde, " + 
+					CadastroCliente.nomes.get(CadastroCliente.emails.indexOf(CadastroCliente.getEmail())));
 			System.out.println("                                                                    ");
 			System.out.println("********************************************************************");
 			

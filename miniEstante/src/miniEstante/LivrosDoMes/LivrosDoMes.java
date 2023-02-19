@@ -3,7 +3,7 @@ package miniEstante.LivrosDoMes;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import miniEstante.homePage.HomePage;
+import miniEstante.paginaCliente.paginaCliente;
 
 public class LivrosDoMes {
 
