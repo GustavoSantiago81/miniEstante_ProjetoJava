@@ -2,6 +2,8 @@ package miniEstante.menuAdministrador;
 
 import java.util.Scanner;
 
+import miniEstante.Cliente.CadastroCliente;
+
 public class MenuAdministrador {
 
   private static String usuario = "admin";
@@ -12,6 +14,7 @@ public class MenuAdministrador {
     Scanner scanner = new Scanner(System.in);
 
     System.out.println("Bem-vindo ao menu de administrador da biblioteca!");
+    // AQUI CHAMA MENU ADMIN
     System.out.println("Digite o usuário: ");
     String usuarioDigitado = scanner.next();
     System.out.println("Digite a senha: ");
