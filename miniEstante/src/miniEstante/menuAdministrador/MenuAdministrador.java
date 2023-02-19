@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import miniEstante.Menu;
 import miniEstante.Cliente.CadastroCliente;
+import miniEstante.Livros.Livros;
 
 public class MenuAdministrador {
 
@@ -40,9 +41,10 @@ public class MenuAdministrador {
 	            System.out.println("1 - Cadastrar cliente");
 	            System.out.println("2 - Ver lista de clientes");
 	            System.out.println("3 - Excluir clientes");
-	            System.out.println("4 - Ver livros");
-	            System.out.println("5 - Excluir livro");
-	            System.out.println("6 - Sair(admin)");
+	            System.out.println("4 - Adicionar livros");
+	            System.out.println("5 - Ver livros");
+	            System.out.println("6 - Excluir livro");
+	            System.out.println("7 - Sair(admin)");
 	            opcao = scanner.nextInt();
 
 	            switch (opcao) {
@@ -56,12 +58,15 @@ public class MenuAdministrador {
 	                	CadastroCliente.removerCliente();
 	                    break;
 	                case 4:
+	                	Livros.adicionarLivros();
+	                	break;
+	                case 5:
 	                    //codigo para ver livros
 	                    break;
-	                case 5:
+	                case 6:
 	                    //codigo para excluir livros
 	                    break;
-	                case 6:
+	                case 7:
 	                    System.out.println(" Administrador Deslogado \nObrigado por usar o sistema!");
 	                    Menu.main(null);
 	                    break;
