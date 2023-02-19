@@ -36,7 +36,7 @@ public class Menu {
 			switch (opcao) {
 			case 1 -> CadastroCliente.logar();
 			case 2 -> CadastroCliente.cadastrarCliente(); 
-			case 3 -> MenuAdministrador.main(args);
+			case 3 -> MenuAdministrador.menuAdministrador();
 			case 4 -> {
 				System.out.println("Até mais! Obrigada por ter Visitado o nosso site. Te esperamos logo!");
 				ler.close();
