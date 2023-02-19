@@ -1,8 +1,6 @@
 # Projeto Java
 <img src="https://clickmuseus.com.br/wp-content/uploads/2021/05/joi.jpg" width="300px;" alt="Foto da logo da linguagem Java"/><br>
 
-
-
 # MINI ESTANTE 📚
 Desenvolvimento feito pelo Grupo 4 do Projeto Java para concluir o Bloco I do curso da Generation Brasil - Pessoa Desenvolvedora Java <br>
 Essa aplicação simula uma biblioteca virtual 
@@ -89,6 +87,14 @@ Entre no diretório do projeto
         </sub>
       </a>
     </td>
+     <td align="center">
+      <a href="https://github.com/GustavoSantiago81">
+        <img src="https://avatars.githubusercontent.com/u/123910445?v=4" width="100px;" alt="Foto do Gustavo no Github"/><br>
+        <sub>
+          <b>Gustavo Santiago</b>
+        </sub>
+      </a>
+    </td>
     <td align="center">
       <a href="https://github.com/ThayaneAlmeida">
         <img src="https://avatars.githubusercontent.com/u/74434739?v=4" width="100px;" alt="Foto da Thayane no GitHub"/><br>
@@ -115,5 +121,4 @@ Entre no diretório do projeto
     </td>
   </tr>
 </table>
-
 
