@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 import miniEstante.Menu;
 import miniEstante.Cliente.CadastroCliente;
-import miniEstante.Livros.Livros;
+import miniEstante.LivrosDoMes.LivrosDoMes;
+
 
 public class MenuAdministrador {
 
@@ -58,7 +59,7 @@ public class MenuAdministrador {
 	                	CadastroCliente.removerCliente();
 	                    break;
 	                case 4:
-	                	Livros.adicionarLivros();
+	                	LivrosDoMes.adicionarLivros();
 	                	break;
 	                case 5:
 	                    //codigo para ver livros

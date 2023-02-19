@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 import miniEstante.Menu;
 import miniEstante.Cliente.CadastroCliente;
-import miniEstante.Livros.Livros;
 import miniEstante.LivrosDoMes.LivrosDoMes;
 
 public class HomePage {
