@@ -45,6 +45,7 @@ public class MenuAdministrador {
 			System.out.println("6 - Excluir livro");
 			System.out.println("7 - Sair(admin)");
 			opcao = scanner.nextInt();
+			scanner.skip("\\R?");
 
 			switch (opcao) {
 			case 1 -> CadastroCliente.cadastrarCliente();

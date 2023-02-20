@@ -34,6 +34,7 @@ public class CadastroCliente {
 	public static void cadastrarCliente() {
 		System.out.println("\nCadastre-se\n");
 		System.out.print("Nome Completo: ");
+		scanner.skip("\\R?");
 		String nome = scanner.nextLine();
 		System.out.print("Telefone com DDD: ");
 		String telefone = scanner.nextLine();
@@ -61,7 +62,8 @@ public class CadastroCliente {
 	public static void removerCliente() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Digite o nome do cliente que deseja remover: ");
-		String nome = scanner.next();
+		scanner.skip("\\R?");
+		String nome = scanner.nextLine();
 		for (int i = 0; i < nomes.size(); i++) {
 			if (nome.equals(nomes.get(i))) {
 				nomes.remove(i);
