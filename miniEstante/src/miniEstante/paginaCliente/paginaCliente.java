@@ -35,7 +35,7 @@ public class paginaCliente {
 			
 			switch (opcao) {
 			case 1 -> System.out.println("1");
-			case 2 -> LivrosDoMes.livrosDoMes();
+			case 2 -> LivrosDoMes.visualizarLivros();
 			case 3 -> devolucaoLivro.devolver();
 			case 4 -> System.out.println("3");
 			case 5 -> Menu.main(null);
