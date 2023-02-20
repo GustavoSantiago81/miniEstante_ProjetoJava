@@ -33,7 +33,7 @@ public class CadastroCliente {
 				int contador = 3;
 
 				do {
-listarClientes();
+
 					int i = CadastroCliente.emails.indexOf(email);
 
 					System.out.println("Digite a senha:");
@@ -66,7 +66,7 @@ listarClientes();
 
 	public static void cadastrarCliente() {
 
-		//listarClientes();
+		// listarClientes();
 
 		System.out.println("\nCadastre-se\n");
 
