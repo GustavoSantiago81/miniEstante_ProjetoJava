@@ -27,7 +27,7 @@ public class paginaCliente {
 			
 			System.out.println("1 - Minha Estante");
 			System.out.println("2 - Buscar Livros");
-			System.out.println("3 - Devolução");
+			System.out.println("3 - Devolução de Livro");
 			System.out.println("4 - Alterar dados");
 			System.out.println("5 - Logout");
 			
