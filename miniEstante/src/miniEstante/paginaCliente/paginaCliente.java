@@ -3,6 +3,7 @@ package miniEstante.paginaCliente;
 import java.util.Scanner;
 
 import miniEstante.Menu;
+import miniEstante.Cliente.AlterarDados;
 import miniEstante.Cliente.CadastroCliente;
 import miniEstante.LivrosDoMes.LivrosDoMes;
 
@@ -16,7 +17,7 @@ public class paginaCliente {
 		
 		
 		while (true) {
-			System.out.println("********************************************************************");
+			System.out.println("\n********************************************************************");
 			System.out.println("                                                                    ");
 			System.out.println("                      Bem-vinde, " + 
 					CadastroCliente.nomes.get(CadastroCliente.emails.indexOf(CadastroCliente.getEmail())));
@@ -33,7 +34,7 @@ public class paginaCliente {
 			switch (opcao) {
 			case 1 -> System.out.println("1");
 			case 2 -> LivrosDoMes.livrosDoMes();
-			case 3 -> System.out.println("3");
+			case 3 -> AlterarDados.alterarDados();
 			case 4 -> Menu.main(null);
 			default -> System.out.println("Opção inválida\n");
 			}

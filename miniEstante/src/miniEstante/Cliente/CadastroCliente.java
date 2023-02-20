@@ -25,32 +25,48 @@ public class CadastroCliente {
 		scanner.skip("\\R?");
 		email = scanner.nextLine();
 
-		if (CadastroCliente.emails.contains(email)) {
-			int contador = 3;
+		if (email.isBlank())
+			System.out.println("Texto Vazio!\n");
+		else {
 
-			do {
-				int i = CadastroCliente.emails.indexOf(email);
+			if (CadastroCliente.emails.contains(email)) {
 
-				System.out.println("Digite a senha:");
-				scanner.skip("\\R?");
-				senha = scanner.nextLine();
+				int contador = 3;
 
-				if (senha.equals(CadastroCliente.senhas.get(i))) {
-					paginaCliente.homePage();
-				} else {
-					System.out.println("Senha incorreta!");
-					System.out.println("Você tem " + contador + " tentativas!");
-					contador--;
-				}
-			} while (contador >= 0 );
+				do {
 
-		} else {
-			System.out.println("\nEmail não cadastrado!");
+					int i = CadastroCliente.emails.indexOf(email);
+
+					System.out.println("Digite a senha:");
+					scanner.skip("\\R?");
+					senha = scanner.nextLine();
+
+					if (senha.isBlank())
+						System.out.println("Senha Vazia!\n");
+					else {
+
+						if (senha.equals(CadastroCliente.senhas.get(i))) {
+							paginaCliente.homePage();
+						} else {
+							System.out.println("Senha incorreta!");
+							
+							if(contador > 0)
+								System.out.println("Você tem " + contador + " tentativa(s)!");
+							contador--;
+						}
+					}
+
+				} while (contador >= 0);
+
+			} else
+				System.out.println("\nEmail não cadastrado!");
+
 		}
 
 	}
 
 	public static void cadastrarCliente() {
+		
 		System.out.println("\nCadastre-se\n");
 
 		System.out.print("Nome Completo: ");
@@ -90,10 +106,14 @@ public class CadastroCliente {
 	}
 
 	public static void removerCliente() {
+
 		Scanner scanner = new Scanner(System.in);
+
 		System.out.print("Digite o nome do cliente que deseja remover: ");
 		scanner.skip("\\R?");
+
 		String nome = scanner.nextLine();
+
 		for (int i = 0; i < nomes.size(); i++) {
 			if (nome.equals(nomes.get(i))) {
 				nomes.remove(i);
@@ -104,6 +124,7 @@ public class CadastroCliente {
 				return;
 			}
 		}
+
 		System.out.println("Cliente não encontrado!");
 	}
 
