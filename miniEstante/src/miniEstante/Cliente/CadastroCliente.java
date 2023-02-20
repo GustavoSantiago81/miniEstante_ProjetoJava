@@ -19,6 +19,9 @@ public class CadastroCliente {
 	private static String senha;
 
 	public static void logar() {
+		
+		clientesPadroes();
+		
 		System.out.println("Login:\n");
 		System.out.println("Email:");
 		scanner.skip("\\R?");
@@ -66,7 +69,7 @@ public class CadastroCliente {
 
 	public static void cadastrarCliente() {
 
-		//listarClientes();
+		clientesPadroes();
 
 		System.out.println("\nCadastre-se\n");
 
@@ -93,36 +96,43 @@ public class CadastroCliente {
 		System.out.println("Cliente cadastrado com sucesso!");
 	}
 
+	public static void clientesPadroes() {
+
+		if (nomes.size() == 0) {
+
+			nomes.add("laise france");
+			telefones.add("(11) 0000-0000");
+			emails.add("laise94@hotmail.com");
+			senhas.add("senha123");
+
+			nomes.add("Gustavo Santiago");
+			telefones.add("(11) 1111-1111");
+			emails.add("gustavo@email.com");
+			senhas.add("senha123");
+
+			nomes.add("Rebeca Damas");
+			telefones.add("(11) 1111-1111");
+			emails.add("rebeca@email.com");
+			senhas.add("senha123");
+
+			nomes.add("Gabriel Farias");
+			telefones.add("(11) 1111-1111");
+			emails.add("gabrielfarias@email.com");
+			senhas.add("senha123");
+
+			nomes.add("Thayane");
+			telefones.add("(11) 1111-1111");
+			emails.add("thayane@email.com");
+			senhas.add("senha123");
+
+			nomes.add("Lucas Marinho");
+			telefones.add("(11) 1111-1111");
+			emails.add("lucasmarinho@email.com");
+			senhas.add("senha123");
+		}
+	}
+
 	public static void listarClientes() {
-		nomes.add("laise france");
-		telefones.add("(11) 0000-0000");
-		emails.add("laise94@hotmail.com");
-		senhas.add("senha123");
-
-		nomes.add("Gustavo Santiago");
-		telefones.add("(11) 1111-1111");
-		emails.add("gustavo@email.com");
-		senhas.add("senha123");
-
-		nomes.add("Rebeca Damas");
-		telefones.add("(11) 1111-1111");
-		emails.add("rebeca@email.com");
-		senhas.add("senha123");
-
-		nomes.add("Gabriel Farias");
-		telefones.add("(11) 1111-1111");
-		emails.add("gabrielfarias@email.com");
-		senhas.add("senha123");
-
-		nomes.add("Thayane");
-		telefones.add("(11) 1111-1111");
-		emails.add("thayane@email.com");
-		senhas.add("senha123");
-
-		nomes.add("Lucas Marinho");
-		telefones.add("(11) 1111-1111");
-		emails.add("lucasmarinho@email.com");
-		senhas.add("senha123");
 
 		if (nomes.size() == 0) {
 			System.out.println("Não existem clientes cadastrados");
