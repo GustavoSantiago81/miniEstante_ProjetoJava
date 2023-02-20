@@ -19,9 +19,9 @@ public class CadastroCliente {
 	private static String senha;
 
 	public static void logar() {
-		
+
 		clientesPadroes();
-		
+
 		System.out.println("Login:\n");
 		System.out.println("Email:");
 		scanner.skip("\\R?");
@@ -134,15 +134,13 @@ public class CadastroCliente {
 
 	public static void listarClientes() {
 
-		if (nomes.size() == 0) {
-			System.out.println("Não existem clientes cadastrados");
-		} else {
-			for (int i = 0; i < nomes.size(); i++) {
-				System.out.println("Nome: " + nomes.get(i));
-				System.out.println("Telefone: " + telefones.get(i));
-				System.out.println("Email: " + emails.get(i));
-				System.out.println("--------------------");
-			}
+		clientesPadroes();
+
+		for (int i = 0; i < nomes.size(); i++) {
+			System.out.println("Nome: " + nomes.get(i));
+			System.out.println("Telefone: " + telefones.get(i));
+			System.out.println("Email: " + emails.get(i));
+			System.out.println("--------------------");
 		}
 	}
 
