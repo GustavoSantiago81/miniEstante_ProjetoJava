@@ -9,11 +9,14 @@ public class CadastroCliente {
 	public static ArrayList<String> nomes = new ArrayList<String>();
 	public static ArrayList<String> telefones = new ArrayList<String>();
 	public static ArrayList<String> emails = new ArrayList<String>();
+	public static ArrayList<String> senhas = new ArrayList<String>();
+
 	static Scanner scanner = new Scanner(System.in);
 
 	private String nome;
 	private String telefone;
 	private static String email;
+	private static String senha;
 
 	public static void logar() {
 
@@ -23,8 +26,24 @@ public class CadastroCliente {
 		email = scanner.nextLine();
 
 		if (CadastroCliente.emails.contains(email)) {
-			paginaCliente.homePage();
-				
+			int contador = 3;
+
+			do {
+				int i = CadastroCliente.emails.indexOf(email);
+
+				System.out.println("Digite a senha:");
+				scanner.skip("\\R?");
+				senha = scanner.nextLine();
+
+				if (senha.equals(CadastroCliente.senhas.get(i))) {
+					paginaCliente.homePage();
+				} else {
+					System.out.println("Senha incorreta!");
+					System.out.println("Você tem " + contador + " tentativas!");
+					contador--;
+				}
+			} while (contador >= 0 );
+
 		} else {
 			System.out.println("\nEmail não cadastrado!");
 		}
@@ -33,16 +52,27 @@ public class CadastroCliente {
 
 	public static void cadastrarCliente() {
 		System.out.println("\nCadastre-se\n");
+
 		System.out.print("Nome Completo: ");
 		scanner.skip("\\R?");
 		String nome = scanner.nextLine();
+
 		System.out.print("Telefone com DDD: ");
+		scanner.skip("\\R?");
 		String telefone = scanner.nextLine();
+
 		System.out.print("Email: ");
+		scanner.skip("\\R?");
 		String email = scanner.nextLine();
+
+		System.out.print("Senha: ");
+		scanner.skip("\\R?");
+		String senha = scanner.nextLine();
+
 		nomes.add(nome);
 		telefones.add(telefone);
 		emails.add(email);
+		senhas.add(senha);
 		System.out.println("Cliente cadastrado com sucesso!");
 	}
 
@@ -69,6 +99,7 @@ public class CadastroCliente {
 				nomes.remove(i);
 				telefones.remove(i);
 				emails.remove(i);
+				senhas.remove(i);
 				System.out.println("Cliente removido com sucesso!");
 				return;
 			}
