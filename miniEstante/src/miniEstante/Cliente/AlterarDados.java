@@ -51,6 +51,9 @@ public class AlterarDados {
 				String telefone = leia.nextLine();
 				CadastroCliente.emails.set(i, telefone);
 			}
+			
+			case 5 -> System.out.println("caso 5"); 
+			
 			default -> System.out.println("Opção inválida");
 			}
 

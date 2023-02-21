@@ -104,7 +104,6 @@ public class CadastroCliente {
 	public static void clientesPadroes() {
 
 		if (nomes.size() == 0) {
-
 			nomes.add("laise france");
 			telefones.add("(11) 0000-0000");
 			emails.add("laise94@hotmail.com");
@@ -130,12 +129,19 @@ public class CadastroCliente {
 			emails.add("thayane@email.com");
 			senhas.add("senha123");
 
+			nomes.add("Danilo");
+			telefones.add("(11) 1111-1111");
+			emails.add("danilo@email.com");
+			senhas.add("senha123");
+
 			nomes.add("Lucas Marinho");
 			telefones.add("(11) 1111-1111");
 			emails.add("lucasmarinho@email.com");
 			senhas.add("senha123");
 		}
 	}
+
+
 
 	public static void listarClientes() {
 
