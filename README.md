@@ -1,3 +1,10 @@
+ <div align="center">
+
+<img src="https://user-images.githubusercontent.com/91226847/220452069-614810d9-7f1a-474c-85e8-3eb89965e6b4.jpg" alt="MarineGEO circle logo" style="height: 300px; width:400px;"/>
+
+
+</div>
+
 # Projeto Java
 
 Projeto desenvolvido durante o curso da Generation Brasil<br>
@@ -86,6 +93,8 @@ Todos os membros da equipe contribuíram para o sucesso do projeto, e todos mere
 
 ---
 ## Desenvolvido por:
+<div align="center">
+
 <table>
   <tr>
     <td align="center">
@@ -146,6 +155,7 @@ Todos os membros da equipe contribuíram para o sucesso do projeto, e todos mere
     </td>
   </tr>
 </table>
+</div>
 
 ## Agradecimentos
 
