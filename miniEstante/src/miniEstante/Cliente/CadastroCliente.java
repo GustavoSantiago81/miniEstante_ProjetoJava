@@ -3,6 +3,7 @@ package miniEstante.Cliente;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import miniEstante.minhaEstante.MinhaEstante;
 import miniEstante.paginaCliente.paginaCliente;
 
 public class CadastroCliente {
@@ -10,6 +11,8 @@ public class CadastroCliente {
 	public static ArrayList<String> telefones = new ArrayList<String>();
 	public static ArrayList<String> emails = new ArrayList<String>();
 	public static ArrayList<String> senhas = new ArrayList<String>();
+
+	public static int contaCliente = emails.size();
 
 	static Scanner scanner = new Scanner(System.in);
 
@@ -20,9 +23,7 @@ public class CadastroCliente {
 
 	public static void logar() {
 
-
 		clientesPadroes();
-
 
 		System.out.println("Login:\n");
 		System.out.println("Email:");
@@ -71,9 +72,8 @@ public class CadastroCliente {
 
 	public static void cadastrarCliente() {
 
-
 		clientesPadroes();
-
+		
 
 		System.out.println("\nCadastre-se\n");
 
@@ -100,10 +100,10 @@ public class CadastroCliente {
 		System.out.println("Cliente cadastrado com sucesso!");
 	}
 
-
 	public static void clientesPadroes() {
 
 		if (nomes.size() == 0) {
+
 			nomes.add("laise france");
 			telefones.add("(11) 0000-0000");
 			emails.add("laise94@hotmail.com");
@@ -138,10 +138,9 @@ public class CadastroCliente {
 			telefones.add("(11) 1111-1111");
 			emails.add("lucasmarinho@email.com");
 			senhas.add("senha123");
+
 		}
 	}
-
-
 
 	public static void listarClientes() {
 
@@ -152,6 +151,7 @@ public class CadastroCliente {
 			System.out.println("Telefone: " + telefones.get(i));
 			System.out.println("Email: " + emails.get(i));
 			System.out.println("--------------------");
+
 		}
 	}
 

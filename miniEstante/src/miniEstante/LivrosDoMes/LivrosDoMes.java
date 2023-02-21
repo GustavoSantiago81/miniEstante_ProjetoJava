@@ -9,24 +9,11 @@ public class LivrosDoMes {
 
 	public static ArrayList<String> livros = new ArrayList<String>();
 
-	public static String visualizarLivros() {
-
-		String[][] livros = { { "LINS, Armando", "Desvendando as Collections", "2018" },
-				{ "ARAÚJO, Fernanda", "Matrizes: O que realmente são?", "2019" },
-				{ "MENDES, Pedro", "Como usar o Git Bash", "2021" },
-				{ "NEVES, Bruna", "Revelando a Linguagem Por Trás do Seu Aplicativo", "2020" },
-				{ "LIMA, Gabriela", "Codar, Rezar, Rodar", "2019" } };
-
-		System.out.println("Livros do mês: \n");
-		for (String[] livro : livros) {
-			System.out.println(livro[0] + " - " + livro[1] + " (" + livro[2] + ")\n");
-		}
-
-		// Cria um array de arrays de Strings contendo informações sobre os livros.
-
-		// Exibe os livros da lista, um por linha
-
-		return ("");
+	public static void visualizarLivros() {
+		
+		System.out.println("\"LIMA, Gabriela\", \"Codar, Rezar, Rodar\", \"2019\"");
+		
+		System.out.println("Cl");
 	}
 
 	public static void adicionarLivros() {
@@ -49,45 +36,45 @@ public class LivrosDoMes {
 
 		// HomePage.homePage();
 	}
-	
-	public static String buscarLivro () {
-	    String[][] livros = { { "LINS, Armando", "Desvendando as Collections", "2018" },
-					{ "ARAÚJO, Fernanda", "Matrizes: O que realmente são?", "2019" },
-					{ "MENDES, Pedro", "Como usar o Git Bash", "2021" },
-					{ "NEVES, Bruna", "Revelando a Linguagem Por Trás do Seu Aplicativo", "2020" },
-					{ "LIMA, Gabriela", "Codar, Rezar, Rodar", "2019" } };
-					
-	    int tentativas = 3;
-	    boolean encontrou = false;
-	    String nomeLivro = "";
-	    Scanner scanner = new Scanner(System.in);
-	    
-	    while (tentativas > 0 && !encontrou) {
-	        System.out.println("Digite o nome do Livro: ");
-	        nomeLivro = scanner.nextLine();
-	        
-	        for (String[] livro : livros) {           
-	            if (livro[1].equals(nomeLivro)) {
-	                encontrou = true;
-	                System.out.println("livro\n" + nomeLivro + "\nencontrado");
-	                break;
-	            }
-	        }
-	        
-	        if (!encontrou) {
-	            System.out.println("Livro não encontrado você tem " + tentativas + " tentativas restantes");
-	            tentativas --;
-	        }
-	    }
-	    
-	    if (encontrou) {
-	        for (String[] livro : livros) {           
-	            if (livro[1].equals(nomeLivro)) {
-	                return "Livro encontrado: \n"+ livro[0] + " - " + livro[1] + " (" + livro[2] + ")\n";
-	            }
-	        }
-	    }
-	    return "";
+
+	public static String buscarLivro() {
+		String[][] livros = { { "LINS, Armando", "Desvendando as Collections", "2018" },
+				{ "ARAÚJO, Fernanda", "Matrizes: O que realmente são?", "2019" },
+				{ "MENDES, Pedro", "Como usar o Git Bash", "2021" },
+				{ "NEVES, Bruna", "Revelando a Linguagem Por Trás do Seu Aplicativo", "2020" },
+				{ "LIMA, Gabriela", "Codar, Rezar, Rodar", "2019" } };
+
+		int tentativas = 3;
+		boolean encontrou = false;
+		String nomeLivro = "";
+		Scanner scanner = new Scanner(System.in);
+
+		while (tentativas > 0 && !encontrou) {
+			System.out.println("Digite o nome do Livro: ");
+			nomeLivro = scanner.nextLine();
+
+			for (String[] livro : livros) {
+				if (livro[1].equals(nomeLivro)) {
+					encontrou = true;
+					System.out.println("livro\n" + nomeLivro + "\nencontrado");
+					break;
+				}
+			}
+
+			if (!encontrou) {
+				System.out.println("Livro não encontrado você tem " + tentativas + " tentativas restantes");
+				tentativas--;
+			}
+		}
+
+		if (encontrou) {
+			for (String[] livro : livros) {
+				if (livro[1].equals(nomeLivro)) {
+					return "Livro encontrado: \n" + livro[0] + " - " + livro[1] + " (" + livro[2] + ")\n";
+				}
+			}
+		}
+		return "";
 	}
 
 }

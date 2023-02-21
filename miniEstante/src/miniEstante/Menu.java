@@ -15,6 +15,7 @@ public class Menu {
 		int opcao;
 		
 		CadastroCliente.clientesPadroes();
+		
 
 		while (true) {
 			System.out.println("                                                                    ");
@@ -31,6 +32,10 @@ public class Menu {
 			System.out.println("********************************************************************");
 			System.out.println("                                                                    ");
 			System.out.println("Escolha uma opção:");
+			
+			CadastroCliente.contaCliente = CadastroCliente.nomes.size();
+			System.out.println(CadastroCliente.contaCliente);
+			System.out.println(CadastroCliente.nomes.size());
 			opcao = ler.nextInt();
 
 			switch (opcao) {
