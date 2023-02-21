@@ -5,6 +5,11 @@ import miniEstante.Cliente.CadastroCliente;
 public class MinhaEstante {
 
 	public static void minhaEstante() {
-		CadastroCliente.getEmail();
+		
+		System.out.println(CadastroCliente.listarClientes());
+	    
+		
+		
+
 	}
 }

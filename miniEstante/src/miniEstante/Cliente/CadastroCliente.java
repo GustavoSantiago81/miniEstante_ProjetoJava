@@ -10,6 +10,7 @@ public class CadastroCliente {
 	public static ArrayList<String> telefones = new ArrayList<String>();
 	public static ArrayList<String> emails = new ArrayList<String>();
 	public static ArrayList<String> senhas = new ArrayList<String>();
+	public static ArrayList<String> livros = new ArrayList<String>();
 
 	static Scanner scanner = new Scanner(System.in);
 
@@ -17,6 +18,7 @@ public class CadastroCliente {
 	private String telefone;
 	private static String email;
 	private static String senha;
+	private static String livro;
 
 	public static void logar() {
 		System.out.println("Login:\n");
@@ -66,7 +68,7 @@ public class CadastroCliente {
 
 	public static void cadastrarCliente() {
 
-		//listarClientes();
+		// listarClientes();
 
 		System.out.println("\nCadastre-se\n");
 
@@ -93,37 +95,53 @@ public class CadastroCliente {
 		System.out.println("Cliente cadastrado com sucesso!");
 	}
 
-	public static void listarClientes() {
-		nomes.add("laise france");
+	public static boolean listarClientes() {
+		nomes.add("Laise France");
 		telefones.add("(11) 0000-0000");
 		emails.add("laise94@hotmail.com");
 		senhas.add("senha123");
+		livros.add("AMARAL,Carla do - Como Utilizar Simbolos no Seu Código (2018)"
+				+ "\nFILHO, João - Desmistificando Python (2021)");
 
 		nomes.add("Gustavo Santiago");
 		telefones.add("(11) 1111-1111");
 		emails.add("gustavo@email.com");
 		senhas.add("senha123");
+		livros.add("SANTOS, Gilberto - Java de A a Z (2019)"
+				+ "\nLIMA, Gabriela - Como se Destacar no Mercado de Trabalho Tech (2020)");
 
 		nomes.add("Rebeca Damas");
 		telefones.add("(11) 1111-1111");
 		emails.add("rebeca@email.com");
 		senhas.add("senha123");
+		livros.add("JUNIOR, Breno - POO na Prática (2018)"
+				+ "\nAMARAL, Carla do - Como Utilizar Simbolos no Seu Código (2018)");
 
 		nomes.add("Gabriel Farias");
 		telefones.add("(11) 1111-1111");
 		emails.add("gabrielfarias@email.com");
 		senhas.add("senha123");
+		livros.add("SANTOS, Gilberto - Java de A a Z (2019)" + "\nFILHO, João - Desmistificando Python (2021)");
 
-		nomes.add("Thayane");
+		nomes.add("Thayane Almeida");
 		telefones.add("(11) 1111-1111");
 		emails.add("thayane@email.com");
 		senhas.add("senha123");
+		livros.add("LIMA, Gabriela - Como se Destacar no Mercado de Trabalho Tech (2020)"
+				+ "\nJUNIOR, Breno - POO na Prática (2018)");
 
 		nomes.add("Lucas Marinho");
 		telefones.add("(11) 1111-1111");
 		emails.add("lucasmarinho@email.com");
 		senhas.add("senha123");
+		livros.add("NETO, Gabriel - Vai um Café com esse Código? (2021)" + "\nJUNIOR, Breno - POO na Prática (2018)");
 
+		nomes.add("Danilo Moraes");
+		telefones.add("(11) 1111-1111");
+		emails.add("danilo@email.com");
+		senhas.add("senha123");
+		livros.add("LIMA, Gabriela - Como se Destacar no Mercado de Trabalho Tech (2020)"
+				+ "\nNETO, Gabriel - Vai um Café com esse Código? (2021)");
 		if (nomes.size() == 0) {
 			System.out.println("Não existem clientes cadastrados");
 		} else {
@@ -131,9 +149,13 @@ public class CadastroCliente {
 				System.out.println("Nome: " + nomes.get(i));
 				System.out.println("Telefone: " + telefones.get(i));
 				System.out.println("Email: " + emails.get(i));
+				System.out.println("Livros: " + livros.get(i));
 				System.out.println("--------------------");
+				
+			
 			}
 		}
+		return false;
 	}
 
 	public static void removerCliente() {
@@ -162,4 +184,11 @@ public class CadastroCliente {
 	public static String getEmail() {
 		return email;
 	}
+
+	public static String getLivro() {
+
+		return livro;
+
+	}
 }
+
