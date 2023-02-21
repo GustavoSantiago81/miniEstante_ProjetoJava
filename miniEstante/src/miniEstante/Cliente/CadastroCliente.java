@@ -3,6 +3,7 @@ package miniEstante.Cliente;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import miniEstante.minhaEstante.MinhaEstante;
 import miniEstante.paginaCliente.paginaCliente;
 
 public class CadastroCliente {
@@ -100,8 +101,7 @@ public class CadastroCliente {
 		telefones.add("(11) 0000-0000");
 		emails.add("laise94@hotmail.com");
 		senhas.add("senha123");
-		livros.add("AMARAL,Carla do - Como Utilizar Simbolos no Seu Código (2018)"
-				+ "\nFILHO, João - Desmistificando Python (2021)");
+		livros.add(MinhaEstante.meusLivros());
 
 		nomes.add("Gustavo Santiago");
 		telefones.add("(11) 1111-1111");
@@ -142,6 +142,7 @@ public class CadastroCliente {
 		senhas.add("senha123");
 		livros.add("LIMA, Gabriela - Como se Destacar no Mercado de Trabalho Tech (2020)"
 				+ "\nNETO, Gabriel - Vai um Café com esse Código? (2021)");
+
 		if (nomes.size() == 0) {
 			System.out.println("Não existem clientes cadastrados");
 		} else {
@@ -151,8 +152,7 @@ public class CadastroCliente {
 				System.out.println("Email: " + emails.get(i));
 				System.out.println("Livros: " + livros.get(i));
 				System.out.println("--------------------");
-				
-			
+
 			}
 		}
 		return false;
@@ -191,4 +191,3 @@ public class CadastroCliente {
 
 	}
 }
-

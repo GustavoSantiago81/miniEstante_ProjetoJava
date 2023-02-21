@@ -6,6 +6,7 @@ import miniEstante.Menu;
 import miniEstante.Cliente.CadastroCliente;
 import miniEstante.LivrosDoMes.LivrosDoMes;
 import miniEstante.devolucaoLivro.devolucaoLivro;
+import miniEstante.minhaEstante.MinhaEstante;
 
 public class paginaCliente {
 	
@@ -33,7 +34,7 @@ public class paginaCliente {
 			opcao = leia.nextInt();
 			
 			switch (opcao) {
-			case 1 -> CadastroCliente.listarClientes();
+			case 1 -> MinhaEstante.meusLivros();
 			case 2 -> LivrosDoMes.visualizarLivros();
 			case 3 -> devolucaoLivro.devolver();
 			case 4 -> System.out.println("3");
