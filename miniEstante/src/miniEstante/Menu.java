@@ -14,6 +14,8 @@ public class Menu {
 		Scanner ler = new Scanner(System.in);
 
 		int opcao;
+		
+		CadastroCliente.clientesPadroes();
 
 		while (true) {
 			System.out.println("                                                                    ");
