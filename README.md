@@ -2,7 +2,9 @@
 <img src="https://clickmuseus.com.br/wp-content/uploads/2021/05/joi.jpg" width="300px;" alt="Foto da logo da linguagem Java"/><br>
 
 # MINI ESTANTE 📚
-Desenvolvimento de projeto feito pelo Grupo 4 do Projeto Java para conclusão do Bloco I do curso da Generation Brasil - Pessoa Desenvolvedora Java <br>
+Desenvolvimento de projeto feito pelo Grupo 4 <br>
+Projeto Java para conclusão do Bloco I do curso da Generation Brasil - Pessoa Desenvolvedora Java <br>
+<br>
 Essa aplicação simula uma biblioteca virtual na qual há 2 perfis de acesso : 
  - Cliente
  - Administrador do sistema 
