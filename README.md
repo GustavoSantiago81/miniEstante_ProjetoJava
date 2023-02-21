@@ -1,16 +1,34 @@
 # Projeto Java
+
+Projeto desenvolvido durante o curso da Generation Brasil<br>
+<br>
 <img src="https://clickmuseus.com.br/wp-content/uploads/2021/05/joi.jpg" width="300px;" alt="Foto da logo da linguagem Java"/><br>
 
 # MINI ESTANTE 📚
-Desenvolvimento feito pelo Grupo 4 do Projeto Java para concluir o Bloco I do curso da Generation Brasil - Pessoa Desenvolvedora Java <br>
-Essa aplicação simula uma biblioteca virtual 
+Desenvolvimento de projeto feito pelo Grupo 4 <br>
+Projeto Java para conclusão do Bloco I do curso da Generation Brasil - Pessoa Desenvolvedora Java <br>
+<br>
+Essa aplicação simula uma biblioteca virtual na qual há 2 perfis de acesso : 
+ - Usuário
+ - Administrador do sistema 
 
 ## Funcionalidades 💻
-o usuário é capaz de :
-- [x] cadastrar o cliente 
-- [x] excluir clientes
-- [x] ver lista de todos os clientes cadastrados
-- [x] ver os livros do inventário
+🙍 O Usuário é capaz de :
+- [x] fazer login
+- [x] cadastrar
+- [x] entrar na sua homePage
+- [x] ver os livros disponíveis
+- [x] buscar livro 
+- [x] devolver o livro
+- [x] trocar o livro 
+
+👨‍💻 o Administrador do sistema é capaz de :
+- [x] fazer o login como administrador
+- [x] cadastrar usuário
+- [x] excluir usuário
+- [x] ver lista de todos os usuários cadastrados
+- [x] buscar livro 
+- [x] ver os livros 
 - [x] devolver livros 
 - [x] trocar livros 
 
@@ -50,10 +68,17 @@ Entre no diretório do projeto
 
 ## Screenshots
 
+## Demonstração
+
 
 ## 📌  Sobre o desenvolvimento
 
- Foram x dias de desenvolvimento
+ Foram x dias de desenvolvimento <br>
+   O desenvolvimento do projeto em grupo foi bem sucedido devido às ferramentas e recursos disponíveis para a nossa utilização. Utilizamos a plataforma de gerenciamento de projetos TRELLO para rastrear o progresso do projeto.<br>
+   Esta plataforma não só nos permitiu monitorar o progresso da equipe, mas também ajudou a criar um ambiente de colaboração entre todos. Além disso, nos reunimos regularmente pelo Discord para compartilhar ideias e discutir possíveis melhorias.<br>
+   Estamos trabalhando para implementar melhorias significativas, como a criação de um banco de dados  para facilitar as funcionalidades . Além disso, estamos nos esforçando para tornar nosso sistema mais seguro e escalável para que possamos atender às necessidades dos usuários.<br>
+Todos os membros do grupo trabalharam diligentemente para criar um projeto funcional em Java. Cada membro contribuiu de alguma forma, desde a codificação  até a documentação do projeto.<br>
+Todos os membros da equipe contribuíram para o sucesso do projeto, e todos merecem muito crédito pela conclusão do projeto.
 
 
 ## Pontos de melhoria
@@ -122,3 +147,8 @@ Entre no diretório do projeto
   </tr>
 </table>
 
+## Agradecimentos
+
+## Contribuindo
+
+Contribuições são sempre bem-vindas!
