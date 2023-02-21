@@ -1,4 +1,7 @@
 # Projeto Java
+
+Projeto desenvolvido durante o curso da Generation Brasil<br>
+<br>
 <img src="https://clickmuseus.com.br/wp-content/uploads/2021/05/joi.jpg" width="300px;" alt="Foto da logo da linguagem Java"/><br>
 
 # MINI ESTANTE 📚
