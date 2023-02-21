@@ -65,6 +65,8 @@ Entre no diretório do projeto
 
 ## Screenshots
 
+## Demonstração
+
 
 ## 📌  Sobre o desenvolvimento
 
@@ -142,3 +144,8 @@ Todos os membros da equipe contribuíram para o sucesso do projeto, e todos mere
   </tr>
 </table>
 
+## Agradecimentos
+
+## Contribuindo
+
+Contribuições são sempre bem-vindas!
