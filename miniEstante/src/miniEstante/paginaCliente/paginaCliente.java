@@ -26,7 +26,7 @@ public class paginaCliente {
 
 			System.out.println("1 - Minha Estante");
 			System.out.println("2 - Buscar Livros");
-			System.out.println("3 - Devolução");
+			System.out.println("3 - Devolução de Livro");
 			System.out.println("4 - Alterar dados");
 			System.out.println("5 - Logout");
 
@@ -34,9 +34,11 @@ public class paginaCliente {
 
 			switch (opcao) {
 			case 1 -> System.out.println("1");
+
 			case 2 -> LivrosDoMes.buscarLivro();
+
 			case 3 -> devolucaoLivro.devolver();
-			case 4 -> System.out.println("3");
+			case 4 -> AlterarDados.alterarDados();
 			case 5 -> Menu.main(null);
 
 			default -> System.out.println("Opção inválida\n");

@@ -6,5 +6,7 @@ public class MinhaEstante {
 
 	public static void minhaEstante() {
 		CadastroCliente.getEmail();
+		CadastroCliente.listarClientes();
+
 	}
 }
