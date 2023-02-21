@@ -3,7 +3,7 @@ package miniEstante.paginaCliente;
 import java.util.Scanner;
 
 import miniEstante.Menu;
-
+import miniEstante.Cliente.AlterarDados;
 import miniEstante.Cliente.CadastroCliente;
 import miniEstante.LivrosDoMes.LivrosDoMes;
 import miniEstante.devolucaoLivro.devolucaoLivro;
@@ -34,14 +34,11 @@ public class paginaCliente {
 
 			switch (opcao) {
 			case 1 -> System.out.println("1");
-<<<<<<< HEAD
-			case 2 -> LivrosDoMes.livrosDoMes();
 
-=======
 			case 2 -> LivrosDoMes.buscarLivro();
->>>>>>> 2c1f8ebdeef42dec80cad08dd308de258e292b0f
+
 			case 3 -> devolucaoLivro.devolver();
-			case 4 -> System.out.println("3");
+			case 4 -> AlterarDados.alterarDados();
 			case 5 -> Menu.main(null);
 
 			default -> System.out.println("Opção inválida\n");

@@ -19,12 +19,11 @@ public class CadastroCliente {
 	private static String senha;
 
 	public static void logar() {
-<<<<<<< HEAD
+
 
 		clientesPadroes();
 
-=======
->>>>>>> 2c1f8ebdeef42dec80cad08dd308de258e292b0f
+
 		System.out.println("Login:\n");
 		System.out.println("Email:");
 		scanner.skip("\\R?");
@@ -72,11 +71,9 @@ public class CadastroCliente {
 
 	public static void cadastrarCliente() {
 
-<<<<<<< HEAD
+
 		clientesPadroes();
-=======
-		// listarClientes();
->>>>>>> 2c1f8ebdeef42dec80cad08dd308de258e292b0f
+
 
 		System.out.println("\nCadastre-se\n");
 
@@ -103,40 +100,8 @@ public class CadastroCliente {
 		System.out.println("Cliente cadastrado com sucesso!");
 	}
 
-<<<<<<< HEAD
+
 	public static void clientesPadroes() {
-=======
-	public static void listarClientes() {
-		nomes.add("laise france");
-		telefones.add("(11) 0000-0000");
-		emails.add("laise94@hotmail.com");
-		senhas.add("senha123");
-
-		nomes.add("Gustavo Santiago");
-		telefones.add("(11) 1111-1111");
-		emails.add("gustavo@email.com");
-		senhas.add("senha123");
-
-		nomes.add("Rebeca Damas");
-		telefones.add("(11) 1111-1111");
-		emails.add("rebeca@email.com");
-		senhas.add("senha123");
-
-		nomes.add("Gabriel Farias");
-		telefones.add("(11) 1111-1111");
-		emails.add("gabrielfarias@email.com");
-		senhas.add("senha123");
-
-		nomes.add("Thayane");
-		telefones.add("(11) 1111-1111");
-		emails.add("thayane@email.com");
-		senhas.add("senha123");
-
-		nomes.add("Lucas Marinho");
-		telefones.add("(11) 1111-1111");
-		emails.add("lucasmarinho@email.com");
-		senhas.add("senha123");
->>>>>>> 2c1f8ebdeef42dec80cad08dd308de258e292b0f
 
 		if (nomes.size() == 0) {
 
