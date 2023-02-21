@@ -52,7 +52,7 @@ public class MenuAdministrador {
 			case 2 -> CadastroCliente.listarClientes();
 			case 3 -> CadastroCliente.removerCliente();
 			case 4 -> LivrosDoMes.adicionarLivros();
-			case 5 -> System.out.println("codigo para ver livros");
+			case 5 -> LivrosDoMes.visualizarLivros();
 			case 6 -> System.out.println("codigo para excluir livros");
 			case 7 -> {
 				System.out.println(" Administrador Deslogado \nObrigado por usar o sistema!");
@@ -62,7 +62,5 @@ public class MenuAdministrador {
 		} while (opcao != 7);
 
 	}
-
-	
 
 }
