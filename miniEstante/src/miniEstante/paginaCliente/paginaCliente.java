@@ -34,13 +34,10 @@ public class paginaCliente {
 
 			switch (opcao) {
 			case 1 -> System.out.println("1");
-
 			case 2 -> LivrosDoMes.buscarLivro();
-
 			case 3 -> devolucaoLivro.devolver();
 			case 4 -> AlterarDados.alterarDados();
 			case 5 -> Menu.main(null);
-
 			default -> System.out.println("Opção inválida\n");
 			}
 		}
