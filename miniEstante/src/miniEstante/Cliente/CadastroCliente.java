@@ -20,9 +20,7 @@ public class CadastroCliente {
 
 	public static void logar() {
 
-
 		clientesPadroes();
-
 
 		System.out.println("Login:\n");
 		System.out.println("Email:");
@@ -71,9 +69,7 @@ public class CadastroCliente {
 
 	public static void cadastrarCliente() {
 
-
 		clientesPadroes();
-
 
 		System.out.println("\nCadastre-se\n");
 
@@ -99,7 +95,6 @@ public class CadastroCliente {
 		senhas.add(senha);
 		System.out.println("Cliente cadastrado com sucesso!");
 	}
-
 
 	public static void clientesPadroes() {
 
@@ -140,7 +135,6 @@ public class CadastroCliente {
 			senhas.add("senha123");
 		}
 	}
-
 
 	public static void listarClientes() {
 
